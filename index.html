@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DomeniInstaller</title>
+    <link rel="stylesheet" href="./resources/style/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menubar">
+        <a href="index.html" ><img src="./resources/static/logo-extended.png" alt="Logo" class="logo" width="250" height="100"></a>
+            <a href="index.html">Ottieni il mio DomeniInstaller</a> •
+            <a href="logos.html">Loghi</a> •
+            <a href="release.html">Release Notes</a> 
+    </div>
+
+    <div class="content">
+        <h2>Ottieni il tuo DomeniInstaller</h2>
+        <div id="app-list">Caricamento in corso...</div>
+
+        <button onclick="MakePS1()">
+            Genera Il mio DomeniInstaller
+        </button>
+
+        <div class="separator"></div>
+
+        <h2>Come funziona?</h2>
+        <p>
+            Seleziona le applicazioni che vuoi installare e clicca sul pulsante <b>Genera Il mio DomeniInstaller</b>.<br>
+            Verrà scaricato un file DomeniInstaller.ps1 che potrai eseguire per installare le applicazioni selezionate.
+        
+            Per eseguire il file, apri <b>PowerShell come amministratore</b> e naviga nella cartella dove hai scaricato il file. Poi esegui il comando:
+            <pre>.\DomeniInstaller.ps1</pre>
+        </p>
+
+        <div class="separator"></div>
+
+        <h2>Risoluzione dei Problemi</h2>
+        <p>Se riscontri il codice errore 0x8a15000f, prova a reinstallare da capo winget con <code>Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Winget.Source_8wekyb3d8bbwe</code></p>
+    </div>
+    <script type="module" src="./resources/javascript/main.js"></script>
+
+    <div class="footer">
+        <p>© 2026-Oggi DomeniInstaller.</p>
+        <p>Il codice sorgente è disponibile su GitHub: <a href="https://github.com/DeMENIGECO/DomeniInstaller" target="_blank">DeMENIGECO/DomeniInstaller</a></p>
+        <p>I contributi sono benvenuti! Puoi contribuire <a href="https://github.com/DeMENIGECO/DomeniInstaller/issues" target="_blank">Segnalando un problema</a>, <a href="https://github.com/DeMENIGECO/DomeniInstaller/pulls" target="_blank">Proponendo modifiche</a> o <a href="https://github.com/DeMENIGECO/DomeniInstaller/discussions" target="_blank">Discutendo di nuove funzionalità o aggiunte di determinate app</a>.</p>
+    </div>
+</body>
+</html>

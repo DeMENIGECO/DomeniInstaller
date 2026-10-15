@@ -1,0 +1,160 @@
+body {
+    background-color: #22C55E;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu Sans';
+    color: #164A41;
+}
+
+.content {
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 101, 52, 0.10);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 24px auto;
+    max-width: 1000px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.content:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.separator {
+    height: 1px;
+    background-color: rgba(22, 101, 52, 0.10);
+    margin: 24px 0;
+}
+
+button {
+    background-color: #21653a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-family: 'Ubuntu Sans';
+}
+
+button:hover {
+    background-color: #164A41;
+    transform: translateY(-2px);
+}
+
+a {
+    color: #164A41;
+    text-decoration: none;
+    font-family: 'Ubuntu Sans';
+}
+
+.menubar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+.menubar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#app-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+#app-list label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#app-list label:hover {
+    border-color: #22C55E;
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.12);
+}
+
+#app-list input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: 2px solid #9ca3af;
+    border-radius: 6px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#app-list input[type="checkbox"]:checked {
+    background-color: #22C55E;
+    border-color: #22C55E;
+}
+
+#app-list input[type="checkbox"]:checked::after {
+    content: "✓";
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 16px;
+}
+
+#app-list label:has(input[type="checkbox"]:checked) {
+    border-color: #22C55E;
+    background-color: #f0fdf4;
+}
+
+#app-list input[type="checkbox"]:focus-visible {
+    outline: 3px solid rgba(34, 197, 94, 0.35);
+    outline-offset: 3px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #6b7280;
+    font-family: 'Ubuntu Sans';
+    color: #fefefe;
+}
+
+.logo-warning {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px;
+    background-color: #f0fdf4;
+    border: 1px solid #136651;
+    border-radius: 10px;
+    color: #136651;
+}
+
+.logo-warning img {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.logo-warning p {
+    margin: 0;
+    font-family: 'Ubuntu Sans', sans-serif;
+}
